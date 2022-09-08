@@ -1,0 +1,11 @@
+// Write a program that pormpts for two numbers, then calculates and outputs the sum, difference, product, and quotient of the two numbers
+
+input 1st number
+input 2nd number
+
+Calculate for sum of the two numbers
+Calculate for difference of the two numbers
+Calculate for the product of the two numbers
+Calculate for the quotient of the two numbers
+
+Print sum, difference , product and quotient of the two numbers

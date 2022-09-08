@@ -1,0 +1,8 @@
+*Comment
+// Most common way to indicate a comment 
+
+input / get
+
+multiply / subtract / divide
+
+display / output

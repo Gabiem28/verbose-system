@@ -1,0 +1,8 @@
+// Calculate gross pay from hourly rate and hours worked
+
+input hours worked
+input hourly rate
+
+Calculate gross pay as hours worked multiplied by hourly rate
+
+output gross pay
