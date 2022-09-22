@@ -11,6 +11,24 @@
 #          3.
 #          4. Output converted number of seconds to days, hours, minutes, and/or seconds
 #
-# Output: 
+# Output: Display number of
 
 # Hint: Find the remainder % (modulus operator)
+
+print ("Time Calculator")
+print ("=" *15)
+print()
+
+mins = 60
+hours = 3600
+days = 86400
+
+
+seconds = int(input('Please enter the number of seconds: '))
+
+if seconds >= 60 and seconds <= 3600:
+    mins = seconds // 60
+    seconds = seconds % 60
+    print ("Minutes: ", mins, "and",seconds, "seconds")
+elif seconds >= 3600 and seconds <= 86400:
+    mins
