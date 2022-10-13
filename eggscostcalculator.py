@@ -44,7 +44,7 @@ if eggType == "Brown" or eggType == "brown":
    costOfEach = eggAmount * BROWN_EGG
    if eggAmount >= DISCOUNT_RANGE_1 and eggAmount < DISCOUNT_RANGE_2:
         discount = DISCOUNT_2
-   if eggAmount >= DISCOUNT_RANGE_2:
+   elif eggAmount >= DISCOUNT_RANGE_2:
         discount = DISCOUNT_3
    else:
     discount = NO_DISCOUNT
@@ -54,7 +54,7 @@ elif eggType == "White" or eggType == "white":
     costOfEach = eggAmount * WHITE_EGG
     if eggAmount >= DISCOUNT_RANGE_1 and eggAmount < DISCOUNT_RANGE_2:
         discount = DISCOUNT_3
-    if eggAmount >= DISCOUNT_RANGE_2:
+    elif eggAmount >= DISCOUNT_RANGE_2:
         discount = DISCOUNT_4
     else:
         discount = NO_DISCOUNT
@@ -64,7 +64,7 @@ elif eggType == "Chocolate" or eggType == "chocolate":
     costOfEach = eggAmount * CHOC_EGG
     if eggAmount >= DISCOUNT_RANGE_1 and eggAmount < DISCOUNT_RANGE_2:
         discount = DISCOUNT_4
-    if eggAmount >= DISCOUNT_RANGE_2:
+    elif eggAmount >= DISCOUNT_RANGE_2:
         discount = DISCOUNT_5
     else:
         discount = NO_DISCOUNT
@@ -74,7 +74,7 @@ elif eggType == "Rainbow" or eggType == "rainbow":
     costOfEach = eggAmount * RAINBOW_EGG
     if eggAmount >= DISCOUNT_RANGE_1 and eggAmount < DISCOUNT_RANGE_2:
         discount = DISCOUNT_5
-    if eggAmount >= DISCOUNT_RANGE_2:
+    elif eggAmount >= DISCOUNT_RANGE_2:
         discount = DISCOUNT_6
     else:
         discount = NO_DISCOUNT 
