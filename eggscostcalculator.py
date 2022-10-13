@@ -16,7 +16,6 @@
 
 
 
-
 print ("Eggs Cost Calculator...\n")
 
 # Constants for type of egg and cost of each
@@ -25,12 +24,13 @@ WHITE_EGG = 0.75
 CHOC_EGG = 1.50
 RAINBOW_EGG = 2.50
 
+
 DISCOUNT_2 = 0.02
 DISCOUNT_3 = 0.03
 DISCOUNT_4 = 0.04
 DISCOUNT_5 = 0.05
 DISCOUNT_6 = 0.06
-NO_DISCOUNT = 1
+NO_DISCOUNT = 0
 
 DISCOUNT_RANGE_1 = 13
 DISCOUNT_RANGE_2 = 97
@@ -39,7 +39,8 @@ eggType = str(input('Enter type of egg you would like to order:'))
 eggAmount = int(input('Enter the amount of this type of egg that you would like to order: '))
 
 
-if (eggType == "Brown","brown"):
+if eggType == "Brown" or eggType == "brown":
+    
    costOfEach = eggAmount * BROWN_EGG
    if eggAmount >= DISCOUNT_RANGE_1 and eggAmount < DISCOUNT_RANGE_2:
         discount = DISCOUNT_2
@@ -48,8 +49,9 @@ if (eggType == "Brown","brown"):
    else:
     discount = NO_DISCOUNT
     
-elif (eggType == "White","white"):
-    costOfEach = eggAmount * BROWN_EGG
+    
+elif eggType == "White" or eggType == "white":
+    costOfEach = eggAmount * WHITE_EGG
     if eggAmount >= DISCOUNT_RANGE_1 and eggAmount < DISCOUNT_RANGE_2:
         discount = DISCOUNT_3
     if eggAmount >= DISCOUNT_RANGE_2:
@@ -57,8 +59,9 @@ elif (eggType == "White","white"):
     else:
         discount = NO_DISCOUNT
 
-elif (eggType == "Chocolate","chocolate"):
-    costOfEach = eggAmount * BROWN_EGG
+
+elif eggType == "Chocolate" or eggType == "chocolate":
+    costOfEach = eggAmount * CHOC_EGG
     if eggAmount >= DISCOUNT_RANGE_1 and eggAmount < DISCOUNT_RANGE_2:
         discount = DISCOUNT_4
     if eggAmount >= DISCOUNT_RANGE_2:
@@ -66,8 +69,9 @@ elif (eggType == "Chocolate","chocolate"):
     else:
         discount = NO_DISCOUNT
 
-elif (eggType == "Rainbow","rainbow"):
-    costOfEach = eggAmount * BROWN_EGG
+
+elif eggType == "Rainbow" or eggType == "rainbow":
+    costOfEach = eggAmount * RAINBOW_EGG
     if eggAmount >= DISCOUNT_RANGE_1 and eggAmount < DISCOUNT_RANGE_2:
         discount = DISCOUNT_5
     if eggAmount >= DISCOUNT_RANGE_2:
@@ -82,6 +86,6 @@ if eggAmount > 0:
     discountPrice = costOfEach * discount
     finalCost = costOfEach - discountPrice
 
-    print ("Your total cost is: ", finalCost)
+    print ("Your total cost is: $",format(finalCost,'.2f'),sep="")
 else:
     print ("Must be greater than 0!")
