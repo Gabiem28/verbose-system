@@ -21,12 +21,12 @@ def menu_Options():
 
         if menuChoice == SEE_RULES:
             print ("The rules are.....")
-            break
+            # Put see_rules function here which shows the rules
         elif menuChoice == PLAY_GAME:
             print ("You are now playing the game.....")
-            break
+            # Put play_game function here which allows player to play the game
         elif menuChoice == SEE_HISTORY:
-            print ("The history is....")
+            print ("The history of player....")
             break
         elif QUIT_GAME:
             print("Thanks for playing!!!")
@@ -35,3 +35,4 @@ def menu_Options():
             print ("Error. Choose from the options above")    
 
 menu_Options()
+
